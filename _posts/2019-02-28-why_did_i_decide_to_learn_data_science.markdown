@@ -42,7 +42,7 @@ As much as the brain fascinated me and how much I wanted to understand it, my en
 
 I can form a hypothesis about relationships between real-world variables, find and clean massive amounts of data from multiple databases, perform deep data exploratory analyses, perform a myriad of statistics and data modeling, and come to a conclusion with supporting figures and within what…a week? 4 weeks? 
 
-**Either way that’s 32 weeks, vs 1-4 weeks. **
+**Either way that’s 32 weeks, vs 1-4 weeks.**
 
 I can think of a _brand-new_ question or relationship that I’ve never considered before and have no prior data about and _reach a meaningful conclusion (that can guide **real-world people and decision-making immediately).**  
 
