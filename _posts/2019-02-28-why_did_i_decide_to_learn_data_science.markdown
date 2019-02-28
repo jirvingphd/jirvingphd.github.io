@@ -13,7 +13,7 @@ permalink:  why_did_i_decide_to_learn_data_science
 
 I was so excited to be able to ask questions about how the brain works and to then design experiments to test them. To gain some meaningful insight that I can then share with the scientific community to so that we can better understand our own behavior as humans, and to provide new insights that can be used in creating new therapeutic treatments for real-world problems, like alcoholism. 
 
-## When we had a new hypothesis that we wanted to test about the roles of stress neurons of the amygdala in the escalation of binge-drinking that leads to alcoholism (that we were not yet set up for), we had to do the following course of events:
+## **When we had a new hypothesis that we wanted to test about the roles of stress neurons of the amygdala in the escalation of binge-drinking that leads to alcoholism (that we were not yet set up for), we had to do the following course of events:**
 
 1)	[~ 1 Week] **Write a new experimental protocol to submit for approval.** This involved laying out the experiment’s aims and hypothesis, what treatments and drugs and behavior the mice would undergo. But this also involves justifying experiments can only be performed in rodents, calculating the # of mice required for the new experiment, the number of breeding cages and offspring and mating schemes to produce those mice, flow charts, detailed descriptions of all people involved and their experience levels. 
 
