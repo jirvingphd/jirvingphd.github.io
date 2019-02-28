@@ -23,14 +23,14 @@ I was so excited to be able to ask questions about how the brain works and to th
 
 4)	[4 weeks] **All of the research techniques we employed used special engineered proteins** packed into otherwise-inert viral vectors, which allowed us to express our special proteins in specific genetically-targeted types of neurons within specific regions of the brain. These proteins would let us either excited or inhibit our targeted neurons using laser light delivered via an optical fire directly into the brain.**Generally, we had to wait _4 weeks_ after surgery** before our engineered proteins had been produced in high enough quantities for us to begin our experimental-manipulations. 
 
-5)	[3-5 weeks] **Our experiments then aimed to study how specific neurons of the amygdala altered binge-drinking of alcohol in mice** (corticotrophin-factor releasing neurons of the central amygdala, to be exact). Mice do not readily drink alcohol and it would take about _3-5 weeks of daily 4-hour-long sessions_ of alcohol access before the mice reached a stable _baseline_ and we could start manipulating the targeted neurons to test our hypothesis. There were only 8-behavior boxes available in our lab, meaning **we could only have 8 mice** undergoing the experiment at a time _(4 control mice and 4 experimental)._ 
+5)	[3-5 weeks] **Our experiments then aimed to study how specific neurons of the amygdala altered binge-drinking of alcohol in mice** (corticotrophin-factor releasing neurons of the central amygdala, to be exact). Mice do not readily drink alcohol and it would take about _3-5 weeks of daily 4-hour-long sessions_ of alcohol access before the mice reached a stable _baseline_ and we could start manipulating the targeted neurons to test our hypothesis. There were only 8-behavior boxes available in our lab, meaning **we could only have 8 mice** undergoing the experiment at a time (4 control mice and 4 experimental). 
 
 6)	[5 weeks] **We then spent _1 week_ doing our exerimental-manipulations** using laser-light excitation during drinking behavior, collecting data on changes in licking patterns, _another week_ of drinking without manipulations, then _3 weeks_ of abstinence form alcohol, then _two more weeks_ of alcohol drinking. 
 
 7)	[1 week] Once the experiments have been performed and the data collected, **we have to verify that our virus actually expressed the protein it was supposed to in the right location**, and that our implants were actually shining light at that location. The brains had to be extracted from the mice, preserved in fixative, frozen, sliced, mounted and then visualized on a confocal microscope, one slice at a time, to see if we can see the fluorescent yellow of our protein, and if it seems to be in the correct location. 
 
 **[!] Uh-oh…** one of our mice didn’t have strong viral expression and one of them had bad implant placement… **thats 2 out of our 8 mice... and all of their data must be eliminated** 
-*Wait, what??*  **Oh, no...they were both the experimental group.** So now we only have data from 2 mice to test our hypothesis, which is *statistically impossible.*
+*Wait, what??*  **Oh, no...** *they were both the experimental group!* So now we only have data from 2 experimental mice and 4 control mice to test our hypothesis, which is *statistically impossible.*
 
 
 **We first thought of our new hypothesis that we desired to test 32 weeks (8 months) ago… _and we still can’t conclude anything_**.
@@ -40,17 +40,17 @@ As much as the brain fascinated me and how much I wanted to understand it, my en
 
 ### **So when you ask me, why study data science? My answer is simple:**
 
-I can form a hypothesis about relationships between real-world variables, find and clean massive amounts of data from multiple databases, perform deep data exploratory analyses, perform a myriad of statistics and data modeling, and come to a conclusion with supporting figures and within what…a week? 4 weeks? 
+I can form a hypothesis about relationships between real-world variables, find and clean massive amounts of data from multiple databases, perform deep data exploratory analyses, perform a myriad of statistics and data modeling, and come to a conclusion with supporting figures and within what…a few days? a week? 4 weeks? 
 
-**Either way that’s 32 weeks, vs 1-4 weeks.**
+*Either way that’s 32 weeks, vs 1-4 weeks.*
 
-I can think of a _brand-new_ question or relationship that I’ve never considered before and have no prior data about and _reach a meaningful conclusion (that can guide **real-world people and decision-making immediately).**  
+**I can think of a _brand-new_ question or relationship that I’ve never considered before and have no prior data about and _reach a meaningful conclusion (that can guide **real-world people and decision-making immediately).**_ 
 
-Whereas my neuroscience research *may* contribute to some meaningful insights about the amygdala’s role in binge drinking, when combined with accumulating research *over the next several years*, which* may* provide information for a scientist to think of a new drug that targets the neural circuitry that *may*  have the desired effect, that needs to be tested *in rodents* and *then in primates*.  _If_ it works and _if_ a pharmaceutical company buys the license to produce the drug and to conduct several years’ worth of clinical trials _(assuming it survives the process)_ before it **might** help real-world people. 
+Whereas my neuroscience research *may* contribute to some meaningful insights about the amygdala’s role in binge drinking, when combined with accumulating research *over the next several years*, which* may* provide information for a scientist to think of a new drug that targets the neural circuitry that *may*  have the desired effect, that needs to be tested *in rodents* and *then in primates*.  _If_ it works and _if_ a pharmaceutical company buys the license to produce the drug and to conduct several years’ worth of clinical trials _(assuming it survives the process)_ before it **might** help real-world people...
 
 
 #### **Yeah…I’ll take the future career in data science, please...** 
-( No offense to my former colleagues. )
+**( No offense to my former colleagues. )**
 
 
 
