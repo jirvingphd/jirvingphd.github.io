@@ -11,7 +11,7 @@ permalink:  why_did_i_decide_to_learn_data_science
 
  For the last 9 years, I have been a neuroscience researcher applying cutting-edge research techniques in behaving rodents to specifically target, manipulate, and record from specific neuron populations in specific regions of the brain. 
 
-I was so excited to be able to ask questions about how the brain works and to then design experiments to test them. To gain some meaningful insight that I can then share with the scientific community to so that we can better understand our own behavior as humans, and to provide new insights that can be used in creating new therapeutic treatments for real-world problems, like alcoholism. 
+I was so excited to be able to ask questions about how the brain works and to then design experiments to test them. To gain some meaningful insight that I can then share with the scientific community so that we can better understand our own behavior as humans, and to provide new insights that can be used in creating new therapeutic treatments for real-world problems, like alcoholism. 
 
 ## **When we had a new hypothesis that we wanted to test about the roles of stress neurons of the amygdala in the escalation of binge-drinking that leads to alcoholism (that we were not yet set up for), we had to do the following course of events:**
 
