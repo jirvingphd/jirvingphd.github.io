@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Why did I decide to learn data science?"
-date:       2019-02-28 15:56:21 +0000
+date:       2019-02-28 10:56:22 -0500
 permalink:  why_did_i_decide_to_learn_data_science
 ---
 
@@ -19,7 +19,7 @@ I was so excited to be able to ask questions about how the brain works and to th
 
 2)	[~2-6 Weeks] **This protocol is then submitted to the Institutional Animal Care and Use Committee (IACUC), which only meets once per month**, and which must approve all experiments before we can even begin setting up our mouse colonies. Chances are that the IACUC committee will disagree with some aspect of your protocol and require an edited version to their specifications. After they finally meet AGAIN, _we are granted approval and can start our experiments..._
 
-3)	[12 weeks] **…except that our experiments require a specific strain of mice**, which we then need to purchase breeding pairs from a national animal repository, which would arrive in a week and then undergo a required _4 week-long quarantine_ before they can be accessed. We then set up male and female breeding pairs and wait for them to mate, produce litters of pups, and wait for them to reach an appropriate age and size  **. which take ~2 months to produce the first mice we can use.)**
+3)	[12 weeks] **…except that our experiments require a specific strain of mice**, which we then need to purchase breeding pairs from a national animal repository, which would arrive in a week and then undergo a required _4 week-long quarantine_ before they can be accessed. We then set up male and female breeding pairs and wait for them to mate, produce litters of pups, and wait for them to reach an appropriate age and size  **(which take ~2 months to produce the first mice we can use.)**
 
 4)	[4 weeks] **All of the research techniques we employed used special engineered proteins** packed into otherwise-inert viral vectors, which allowed us to express our special proteins in specific genetically-targeted types of neurons within specific regions of the brain. These proteins would let us either excited or inhibit our targeted neurons using laser light delivered via an optical fire directly into the brain.**Generally, we had to wait _4 weeks_ after surgery** before our engineered proteins had been produced in high enough quantities for us to begin our experimental-manipulations. 
 
