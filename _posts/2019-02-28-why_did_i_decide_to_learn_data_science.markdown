@@ -29,11 +29,11 @@ I was so excited to be able to ask questions about how the brain works and to th
 
 7)	[1 week] Once the experiments have been performed and the data collected, **we have to verify that our virus actually expressed the protein it was supposed to in the right location**, and that our implants were actually shining light at that location. The brains had to be extracted from the mice, preserved in fixative, frozen, sliced, mounted and then visualized on a confocal microscope, one slice at a time, to see if we can see the fluorescent yellow of our protein, and if it seems to be in the correct location. 
 
-**[!] Uh-oh…** one of our mice didn’t have strong viral expression and one of them had bad implant placement… **thats 2 out of our 8 mice..._and all of their data must be eliminated** 
-*Wait, what?*  **Oh, no...they were both the experimental group.** So now you only have data from 2 mice to test your hypothesis, which is **statistically impossible. **
+**[!] Uh-oh…** one of our mice didn’t have strong viral expression and one of them had bad implant placement… **thats 2 out of our 8 mice... and all of their data must be eliminated** 
+*Wait, what??*  **Oh, no...they were both the experimental group.** So now we only have data from 2 mice to test our hypothesis, which is *statistically impossible.*
 
 
-**We first thought of our new hypothesis that we desired to test …32 weeks (8 months ago)…._and we still can’t conclude anything_**.
+**We first thought of our new hypothesis that we desired to test …32 weeks (8 months ago)…._and we still can’t conclude anything**.
 
 
 As much as the brain fascinated me and how much I wanted to understand it, my enthusiasm for research was drained out of me. **The idea of hypothesis testing became lost in the sea of logistical execution.** You can start to see how scientists may be subconsciously biased towards getting a result. How could we not, when we invest so much of ourselves for so long into one question? By the end, I was afraid to ask a new question….or to question the statistical power of my data…
