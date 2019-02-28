@@ -7,13 +7,13 @@ permalink:  why_did_i_decide_to_learn_data_science
 
 
 
-### My fascination with the brain and my insatiable curiosity about all it does and is responsible for pushed me towards neuroscience research.
+## My fascination with the brain and my insatiable curiosity about all it does and is responsible for pushed me towards neuroscience research.
 
  For the last 9 years, I have been a neuroscience researcher applying cutting-edge research techniques in behaving rodents to specifically target, manipulate, and record from specific neuron populations in specific regions of the brain. 
 
 I was so excited to be able to ask questions about how the brain works and to then design experiments to test them. To gain some meaningful insight that I can then share with the scientific community to so that we can better understand our own behavior as humans, and to provide new insights that can be used in creating new therapeutic treatments for real-world problems, like alcoholism. 
 
-### When we had a new hypothesis that we wanted to test about the roles of stress neurons of the amygdala in the escalation of binge-drinking that leads to alcoholism (that we were not yet set up for), we had to do the following course of events:
+## When we had a new hypothesis that we wanted to test about the roles of stress neurons of the amygdala in the escalation of binge-drinking that leads to alcoholism (that we were not yet set up for), we had to do the following course of events:
 
 1)	[~ 1 Week] **Write a new experimental protocol to submit for approval.** This involved laying out the experiment’s aims and hypothesis, what treatments and drugs and behavior the mice would undergo. But this also involves justifying experiments can only be performed in rodents, calculating the # of mice required for the new experiment, the number of breeding cages and offspring and mating schemes to produce those mice, flow charts, detailed descriptions of all people involved and their experience levels. 
 
@@ -40,13 +40,12 @@ As much as the brain fascinated me and how much I wanted to understand it, my en
 
 ### **So when you ask me, why study data science? My answer is simple:**
 
-I can form a hypothesis about relationships between real-world variables, find and clean massive amounts of data from multiple databases, perform deep data exploratory analyses, perform a myriad of statistics and data modeling, and come to a conclusion with supporting figures and within what…a few days? a week? 4 weeks? 
+**I can form a hypothesis about relationships between real-world variables, find and clean massive amounts of data from multiple databases, perform deep exploratory data analyses, perform a myriad of statistics and data modeling,  come to a conclusion** and prepare a report with supporting figures and within what… a few days? a week? 4 weeks?
+That’s *32 weeks, vs 1-4 weeks.*
 
-*Either way that’s 32 weeks, vs 1-4 weeks.*
+#### I can think of a _brand-new_ question or relationship that I’ve _never_ considered before and have no prior data about and reach a meaningful conclusion that can help guide real-world people and decision-making _immediately_... 
 
-**I can think of a _brand-new_ question or relationship that I’ve never considered before and have no prior data about and _reach a meaningful conclusion (that can guide **real-world people and decision-making immediately).**_ 
-
-Whereas my neuroscience research *may* contribute to some meaningful insights about the amygdala’s role in binge drinking, when combined with accumulating research *over the next several years*, which* may* provide information for a scientist to think of a new drug that targets the neural circuitry that *may*  have the desired effect, that needs to be tested *in rodents* and *then in primates*.  _If_ it works and _if_ a pharmaceutical company buys the license to produce the drug and to conduct several years’ worth of clinical trials _(assuming it survives the process)_ before it **might** help real-world people...
+**...whereas my neuroscience research *may* contribute to some meaningful insights** about the amygdala’s role in binge drinking, when combined with accumulating research *over the next several years*, which* may* provide information for a scientist to think of a new drug that targets the neural circuitry that *may*  have the desired effect, that needs to be tested *in rodents* and *then in primates*.  _If_ it works and _if_ a pharmaceutical company buys the license to produce the drug and to conduct several years’ worth of clinical trials _(assuming it survives the process)_ before it *might* help real-world people...
 
 
 #### **Yeah…I’ll take the future career in data science, please...** 
