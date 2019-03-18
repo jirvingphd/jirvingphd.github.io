@@ -6,16 +6,16 @@ permalink:  harnessing_seaborn_subplots_for_eda
 ---
 
 
-Seaborn is known for making exploratory data analysis (EDA) easy and pleasing to the eye. Seaborn is built upon Matplotlib, however, the complexities of its synatx makes it harder to customize than its Matplotlib counterparts. In this post we shall be re-creating a version of a function I created for EDA called 'plot_hist_scat_sns', while explaning how to customize a Seaborn figure's subplots. 
+Seaborn is known for making exploratory data analysis (EDA) easy and pleasing to the eye. Seaborn is built upon Matplotlib, however, the complexities of its syntax make it harder to customize than its Matplotlib counterparts. In this post, we shall be re-creating a version of a function I created for EDA called ‘plot_hist_scat_sns’ while explaining how to customize a Seaborn figure’s subplots.
 
 ```python
 plot_hist_scat_sns(df_final_data,'price')
 ```
 <img src="https://www.dropbox.com/s/x6f6bo662u8bxvm/sqft_living_dist_regr_plots.png?raw=1" width="800" height="400" />
 
-This function creates a figure for every numerical data column in a dataframe vs the target variable Price. The figure consists of 2 subplots, a seaborn distplot on the left, normalized based on the kernel density estimation, and a seaborn regplot  on the right, with a regression line for the relationship between the current variable and the target variable. This is a fantastic shortcut for initial inspection of a dataset. 
+This function creates a figure for every numerical data column in a dataframe vs the target variable Price. The figure consists of 2 subplots, a seaborn distplot on the left, normalized based on the kernel density estimation, and a seaborn regplot on the right, with a regression line for the relationship between the current variable and the target variable. This is a fantastic shortcut for initial inspection of a dataset.
+In one clean 2-panel figure, you can simultaneously examine the distribution of each variable on the left, while examining the linear relationship between each predictor variable and the target on the right. This is vital information to consider when contemplating if your dataset requires transformation before it can be used in a linear regression model.
 
-In one clean 2-panel figure, you can simultaneously examine the distribution of each variable on the left, while examining the linear relationship between between each predictor variable and the target on the right. This is vital information to consider when contemplating if your dataset requires transformation before it can be used in a linear regression model. 
 
 ## Check out the full code for plot_hist_scat_sns before we break it down into pieces below.
 
@@ -139,7 +139,7 @@ def plot_hist_scat_sns(df, target='price'):
     return 
 ```
 
-## We are going to break-down how acheive customized, attractive subplots in seaborn to empower you to create customized and clean figures in Seaborn. 
+## We are going to break-down how to achieve customized, attractive subplots in seaborn to empower you to create customized and clean figures in Seaborn.
 
 
 
@@ -156,7 +156,7 @@ plt.style.use('dark_background')
 def plot_hist_scat_sns(df, target='price'):
 
 ```
-In additon to calling matplotlib.pyplot, as we usually do, we will also be taking advantage of matplotlib.ticker to customize the ticks of our axes. For these figures I am using the 'dark_background' style. The function was constructed to be run on the King County housing data set and assumed a target variable of price. 
+In addition to calling matplotlib.pyplot, as we usually do, we will also be taking advantage of matplotlib.ticker to customize the ticks of our axes. For these figures, I am using the ‘dark_background’ style. The function was constructed to be run on the King County housing data set and assumed a target variable of price.
 
 #### Defining fonts for titles, axes, and ticks
 ```python
@@ -175,7 +175,7 @@ In additon to calling matplotlib.pyplot, as we usually do, we will also be takin
                 'fontfamily':'serif'}								
 ```
 
-We will be using the parameter **fontdict** in Seaborn/matplotlib in order to reference previously defined font dictionaries. In this example we have  a separate fontdict for Titles, Axis Titles, and Ticks. We may define the fontfamily, fontsize, and fontweight. [To see the full list of parameters checkout the matplotlib documentation](https://matplotlib.org/tutorials/text/text_props.html#sphx-glr-tutorials-text-text-props-py) 
+We will be using the parameter **fontdict** in Seaborn/matplotlib in order to reference previously defined font dictionaries. In this example we have a separate fontdict for Titles, Axis Titles, and Ticks. We may define the fontfamily, fontsize, and fontweight. [To see the full list of parameters checkout the matplotlib documentation](https://matplotlib.org/tutorials/text/text_props.html#sphx-glr-tutorials-text-text-props-py) 
 
 #### Formatting Price to include $'s and the comma separator for thousands ( i.e. $100,000)
 ```python
@@ -184,7 +184,7 @@ We will be using the parameter **fontdict** in Seaborn/matplotlib in order to re
     tickPrice = mtick.StrMethodFormatter(fmtPrice)
 ```
 
-Here we are defining fmtPrice, which indicates we want a $ in front of our string x, using commas, with 0 decimal places. We then define tickPrice, which will use Matplotlib.ticker's StrMethodFormatter to format out text when called during plotting. 
+Here we are defining fmtPrice, which indicates we want a $ in front of our string x, using commas, with 0 decimal places. We then define tickPrice, which will use Matplotlib.ticker’s StrMethodFormatter to format out text when called during plotting.
 
 
 #### Looping through the dataframe to produce separate figures with subplots for each column in our dataframe. 
@@ -199,14 +199,14 @@ Here we are defining fmtPrice, which indicates we want a $ in front of our strin
         #  declare an extra row of subplots to be removed later
         fig, ax = plt.subplots(figsize=(12,10), ncols=2, nrows=2)
 ```
-The important thing to note here is that **I declared my subplots from the beginning using plt.subplots(ncols,nrows)**. Even though our final figure will only have 2 subplots, I am declaring a subplot with 2 cols 2 rows. The reason I do this is to use the most flexible code that can easily be used in figures with more complicated subplots. 
-
-If we were to declare only 2 subplots, ax would be np array with 2 elements, one for each subplot. The first subplot would  be ax[0], the second would be ax[1]. While this is straightforward and easy to code, it is not very fexible and would need to be re-written once we create more complex 2-D layouts. 
+The important thing to note here is that **I declared my subplots from the beginning using plt.subplots(ncols,nrows)**. Even though our final figure will only have 2 subplots, I am declaring a subplot with 2 cols 2 rows. The reason I do this is to use the most flexible code that can easily be used in figures with more complicated subplots.
+If we were to declare only 2 subplots, ax would be np array with 2 elements, one for each subplot. The first subplot would be ax[0], the second would be ax[1]. While this is straightforward and easy to code, it is not very flexible and would need to be re-written once we create more complex 2-D layouts.
+ 
 
 With more than 1 row and 1 column, the addresses in ax become 2-D where the indices are: **ax[row, column]**. 
-In our 2 x 2 subplot layout, the top-left subplot is ax[0,0], the top-right is ax[0,1], bottom-left is ax[1,0], and bottom-right is ax[1,1]. By declaring ncols=2, nrows=2, the syntax for all of the plots will be the same regardless of how many subplots are in the figure. 
+In our 2 x 2 subplot layout, the top-left subplot is ax[0,0], the top-right is ax[0,1], bottom-left is ax[1,0], and bottom-right is ax[1,1]. By declaring ncols=2, nrows=2, the syntax for all of the plots will be the same regardless of how many subplots are in the figure.
 
-Instead of having to manually change all of the figure's axes in each location of its code, we can simply refer to all axes by row i and column j, such that **every axis is referred to as ax[i,j]**. Then, we define what i and j before each plot, saving us from replacing each axis address independently. 
+Instead of having to manually change all of the figure’s axes in each location of its code, we can simply refer to all axes by row i and column j, such that **every axis is referred to as ax[i,j]**. Then, we define what i and j before each plot, saving us from replacing each axis address independently.
 
 ```python
         ## ----- SUBPLOT 1 -----##
@@ -215,7 +215,7 @@ Instead of having to manually change all of the figure's axes in each location o
 ```
 **See how we first declare i and j to be 0,0 respectively. Now we can refer to ax[i,j] and this code would work anywhere** in our figure without having to change the row and column each time.
 
-**Also, see how when I call set_title,** I specify the title text first (column.capitalize()) and then feed in fontdict=fontTitle. This way, the title will be constructed with the font settings that we declared in the beginning of the function, without having to type all of that information for each plot.
+**Also, see how when I call set_title,** I specify the title text first (column.capitalize()) and then feed in fontdict=fontTitle. This way, the title will be constructed with the font settings that we declared at the beginning of the function, without having to type all of that information for each plot.
 
  ### Now here is where things start to get tricky with Seaborn...**
 
