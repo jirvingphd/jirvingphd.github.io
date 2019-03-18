@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Harnessing Seaborn Subplots for EDA  "
-date:       2019-03-18 01:32:19 +0000
+date:       2019-03-17 21:32:20 -0400
 permalink:  harnessing_seaborn_subplots_for_eda
 ---
 
@@ -141,10 +141,6 @@ def plot_hist_scat_sns(df, target='price'):
 
 ## We are going to break-down how acheive customized, attractive subplots in seaborn to empower you to create customized and clean figures in Seaborn. 
 
-**After reading this tutorial you will be well-equipped to produce more complex figures such as my summary figure for King's County house pricing, below.**
-
-<img src="https://www.dropbox.com/s/gzxn9pq3698vh32/summary_figure.png?raw=1" width="800" height="600" />
-
 
 
 #### Importing packages
@@ -221,6 +217,7 @@ Instead of having to manually change all of the figure's axes in each location o
 
 **Also, see how when I call set_title,** I specify the title text first (column.capitalize()) and then feed in fontdict=fontTitle. This way, the title will be constructed with the font settings that we declared in the beginning of the function, without having to type all of that information for each plot.
 
+ ### Now here is where things start to get tricky with Seaborn...**
 
 #### Defining seaborn plot specifications before plotting
 ```python
@@ -235,7 +232,6 @@ Instead of having to manually change all of the figure's axes in each location o
                      label=column+' histogram', ax=ax[i,j])
  ```
  
- **Now here is where things start to get tricky with Seaborn...**
  Since Seaborn plots are usually actually built upon matplotlib's built-in functions, there are often a large number of possible parameters that could be passed when creating a plot. The way seaborn tries to simplify this is by creating a **keyword dictionary** for the different elements of the plot. 
  
  Here, we are going to be calling sns.distplot, which will be producing a histogram and kde plot. Accordingly, we will be defining the histogram keywords (**hist_kws**) and kde keywords (**kde_kws**). The keywords may contain any of the arguments that are normally accepted by the underlying matplotlib functions. In this case, we are specifying the line aesthetics for both the histogram and kde. In order to use our keyword dictionaries, we must pass in the name of the dict such as hist_kws = my_hist_kws, as seen above. 
@@ -247,9 +243,93 @@ Instead of having to manually change all of the figure's axes in each location o
 ```python 
         # Set x axis label
         ax[i,j].set_xlabel(column.title(),fontdict=fontAxis)
-    
+```
+Just like when we created our title, we pass the proper fontdict when we set our xlabel. 
+
+```python
         # Get x-ticks, rotate labels, and return
         xticklab1 = ax[i,j].get_xticklabels(which = 'both')
+```
+In order to customize our ticks, we must first get the current x-tick lables (ax[i,j].get_xticklabels(which = 'both'), before we can then set our labels using our fontdict and adding 45 degree rotation to the labels. 
+```python
         ax[i,j].set_xticklabels(labels=xticklab1, fontdict=fontTicks, rotation=45)
         ax[i,j].xaxis.set_major_formatter(mtick.ScalarFormatter())
+```
+
+#### Cutomizing y-axis labels and ticks using the same syntax
+```python
+        ax[i,j].set_ylabel('Density',fontdict=fontAxis)
+        yticklab1=ax[i,j].get_yticklabels(which='both')
+        ax[i,j].set_yticklabels(labels=yticklab1,fontdict=fontTicks)
+        ax[i,j].yaxis.set_major_formatter(mtick.ScalarFormatter())
+```
+
+#### Adding a y-axis grid that appears *behind* our data. 
+ ```python   
+        # Set y-grid
+        ax[i, j].set_axisbelow(True)
+        ax[i, j].grid(axis='y',ls='--')
+```
+**and thats it for sub-plot one!**.
+
+#### Subplot 2 repeats much of the same code
+The major difference is that the second plot is a sns.regplot, which is made of different componets than the sns.distplot above, and consequently takes in different keyword dictionaries. It takes it one keyword dictionary for the line (line_kws) and another for the scatter plot (scatter_kws).
+```python
+ ## ----- SUBPLOT 2-----  ##
+        i,j = 0,1
+        ax[i,j].set_title(column.capitalize(),fontdict=fontTitle)
+
+        # Define the ketword dictionaries for  scatter plot and regression line (subplot 2)
+        line_kws={"color":"white","alpha":0.5,"lw":4,"ls":":"}
+        scatter_kws={'s': 2, 'alpha': 0.5,'marker':'.','color':'blue'}
+
+        # Plot regplot on ax[i,j] using line_kws and scatter_kws
+        sns.regplot(df[column], df[target], 
+                    line_kws = line_kws,
+                    scatter_kws = scatter_kws,
+                    ax=ax[i,j])
+        
+        # Set x-axis label
+        ax[i,j].set_xlabel(column.title(),fontdict=fontAxis)
+
+         # Get x ticks, rotate labels, and return
+        xticklab2=ax[i,j].get_xticklabels(which='both')
+        ax[i,j].set_xticklabels(labels=xticklab2,fontdict=fontTicks, rotation=45)
+        ax[i,j].xaxis.set_major_formatter(mtick.ScalarFormatter())
+```
+
+#### Now here is where we will use our price formatting we declared in the beginning:
+The only difference here is that we call upon our tickPrice formatter that we defined at the beginning of the function in order to get our y-axis to have $'s , use comma to separate thousands, and to show no decimal places. 
+```python
+ # Set  y-axis label
+        ax[i,j].set_ylabel('Price',fontdict=fontAxis)
+        
+        # Get, set, and format y-axis Price labels
+        yticklab = ax[i,j].get_yticklabels()
+        ax[i,j].set_yticklabels(yticklab,fontdict=fontTicks)
 				
+        ax[i,j].get_yaxis().set_major_formatter(tickPrice) 
+```
+​We then finish our subplot by defiing the y-axis grid like in subplot 1. 
+```python
+        # Set y-grid
+        ax[i, j].set_axisbelow(True)
+        ax[i, j].grid(axis='y',ls='--')       
+```
+
+#### Deleting our un-used subplots and using the magic fig.tight_layout() command. 
+```python
+ ## ---------- Final layout adjustments ----------- ##
+        # Deleted unused subplots 
+        fig.delaxes(ax[1,1])
+        fig.delaxes(ax[1,0])
+
+        # Optimizing spatial layout
+        fig.tight_layout()
+```
+
+### There we go! Thats it. :-) Now that you've seen how to deal with the curve-balls that seaborn subplots throws at us, you  are now well-equipped to begin produce more complex figures such as my summary figure for King's County house pricing, below.
+
+<img src="https://www.dropbox.com/s/gzxn9pq3698vh32/summary_figure.png?raw=1" width="800" height="600" />
+
+
