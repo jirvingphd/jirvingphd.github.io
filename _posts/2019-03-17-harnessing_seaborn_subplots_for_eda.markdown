@@ -329,6 +329,7 @@ The only difference here is that we call upon our tickPrice formatter that we de
 ```
 
 ### There we go! Thats it. :-) Now that you've seen how to deal with the curve-balls that seaborn subplots throws at us, you  are now well-equipped to begin produce more complex figures such as my summary figure for King's County house pricing, below.
+[You may see both in action by running Summary Figure Alone.ipynb in this data repository.](https://github.com/jirvingphd/dsc-1-final-project-online-ds-ft-021119)
 
 <img src="https://www.dropbox.com/s/gzxn9pq3698vh32/summary_figure.png?raw=1" width="800" height="600" />
 
