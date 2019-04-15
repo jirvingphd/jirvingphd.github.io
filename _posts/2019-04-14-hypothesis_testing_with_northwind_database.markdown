@@ -129,11 +129,11 @@ ___
 
 <br>
 **H1 Test Results**<br>
-<img src='https://github.com/jirvingphd/dsc-2-final-project-online-ds-ft-021119/blob/master/Blog%20Post%20Images/table_H1_test_results.png' width='600')<br>
+<img src="https://github.com/jirvingphd/dsc-2-final-project-online-ds-ft-021119/blob/master/Blog%20Post%20Images/table_H1_test_results.png" width="600")<br>
 **H1-Main Comparison**<br>
 
 
-<img  src="https://www.dropbox.com/s/iuh1ul5bn0on766/H1_ppt_KDE_bar.png?raw=1" width=600>
+<img  src="https://www.dropbox.com/s/iuh1ul5bn0on766/H1_ppt_KDE_bar.png?raw=1" width="600">
 <br>
 
 ***H1, Aim 3: To perform post-hoc pairwise comparisons for level of discount***
