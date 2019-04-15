@@ -124,7 +124,8 @@ so
     - We therefore decided on a Mann-Whitney U test, which came back significant.
     - We calculated our effect size using Cohen's d.
 <br>
-<img alt="H1 Test Results" src='https://www.dropbox.com/s/novnqt2a7j4hrhd/table_H1_test_results.png?raw=1' width=600>
+**H1 Test Results**
+<img  src='https://www.dropbox.com/s/novnqt2a7j4hrhd/table_H1_test_results.png?raw=1' width=600>
 
 <img alt="H1 Results Kde Bar" src="https://www.dropbox.com/s/iuh1ul5bn0on766/H1_ppt_KDE_bar.png?raw=1" width=600>
 <br>
