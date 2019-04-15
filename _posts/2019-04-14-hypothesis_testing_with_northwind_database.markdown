@@ -37,6 +37,8 @@ ___
 
     - H1: Different countries purchase different quantities of discounted vs non discounted products. 
     - H0: All countries purchase the same quantities of discounted vs non discounted products. 
+
+
 ___
 
 ## Our Methodology
@@ -129,23 +131,28 @@ ___
 
 <img  src='https://www.dropbox.com/s/novnqt2a7j4hrhd/table_H1_test_results.png?raw=1' width=600><br>
 **H1-Main Comparison**<br>
+
+
 <img  src="https://www.dropbox.com/s/iuh1ul5bn0on766/H1_ppt_KDE_bar.png?raw=1" width=600>
 <br>
 
 ***H1, Aim 3: To perform post-hoc pairwise comparisons for level of discount***
-
-- To find out which level of discount is most effective/significant we binned the discount levels in 0.5% groups.
+- **To determine which level of discounts had the largest effect, we performed a pairwise multiple comparison Tukey's test**
+- Since there were only 1 item on sale at certain discount levels, we binned the discount levels in 0.5% groups.
     - No Discounts is represnted by the interval (-0.05 to 0].
 <br> 
 **Post-Hoc Comparison by Discount Level**<br>
+
 <img src='https://www.dropbox.com/s/bglnpg69575x4jm/H1_tukey_bar.png?raw=1' width=600>
 <br>
- <img  src='https://www.dropbox.com/s/3uwfhdu6sqg5oil/table_H1_groups_mean_sem.png?raw=1' width=400>
+
+
+ <img  src='https://www.dropbox.com/s/3uwfhdu6sqg5oil/table_H1_groups_mean_sem.png?raw=1' width=400><br>
     
+
 <img  src='https://www.dropbox.com/s/2ymzmrb6t15hhsy/table_H1_tukey_sig_only.png?raw=1' width=400>
 
 
-4. **To determine which level of discounts had the largest effect, we performed a pairwise multiple comparison Tukey's test**. 
 
     
 ### ***Conclusions for Hypothesis 1:***
