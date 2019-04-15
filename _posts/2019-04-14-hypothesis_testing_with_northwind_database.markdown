@@ -15,6 +15,7 @@ Additionally, we were tasked with thinking of  3 other questions that would be o
 They requested we formally apply hypothesis testing for our results to see if we could the null hypothesis, that there is no effect of discounts on quantities purchased.
     
 After considering their initial question and examining their databases, we decided that the company would be interested in understanding other aspects of consumer purchasing behavior. We then formulated 3 addititional questions along those lines.
+
 ___
 ## Four Hypotheses Regarding Consumer Purchasing Behavior
 
@@ -129,7 +130,7 @@ ___
 <br>
 **H1 Test Results**<br>
 
-<img  src='https://www.dropbox.com/s/novnqt2a7j4hrhd/table_H1_test_results.png?raw=1' width=600>< /img><br>
+<img  src='https://github.com/jirvingphd/dsc-2-final-project-online-ds-ft-021119/blob/master/Blog%20Post%20Images/table_H1_test_results.png' width=600><br>
 **H1-Main Comparison**<br>
 
 
