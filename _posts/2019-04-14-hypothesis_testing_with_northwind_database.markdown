@@ -95,7 +95,7 @@ ___
         - Tukey's multiple pairwise comparison test
     - If the result was significant, we rejected the null hypothesis and performed additional analyses:
         - Calculated effect size with Cohen's d.
-- ***Aim 3: If appropriate, perform post-hoc pairwise comparison testing to determine which specific levels of our groups that are significantly differnet.***![](http://)
+- ***Aim 3: If appropriate, perform post-hoc pairwise comparison testing to determine which specific levels of our groups that are significantly differnet.***
      - Tukey's test for multiple pairwise comparisons<br>
      ```statsmodels.stats.multicomp.pairwise_tukeyhsd```
 	
@@ -129,8 +129,7 @@ ___
 
 <br>
 **H1 Test Results**<br>
-
-<img  src='https://github.com/jirvingphd/dsc-2-final-project-online-ds-ft-021119/blob/master/Blog%20Post%20Images/table_H1_test_results.png' width=600><br>
+<img src='https://github.com/jirvingphd/dsc-2-final-project-online-ds-ft-021119/blob/master/Blog%20Post%20Images/table_H1_test_results.png' width='600')<br>
 **H1-Main Comparison**<br>
 
 
