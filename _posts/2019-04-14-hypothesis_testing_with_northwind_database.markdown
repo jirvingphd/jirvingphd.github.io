@@ -129,11 +129,11 @@ ___
 <br>
 **H1 Test Results**<br>
 
-<img alt="H1 Test Results" src='https://www.dropbox.com/s/novnqt2a7j4hrhd/table_H1_test_results.png?raw=1' width='600'><br>
+<img alt="H1 Test Results" src='https://www.dropbox.com/s/novnqt2a7j4hrhd/table_H1_test_results.png?raw=1' width='600 ' align='middle'><br>
 **H1-Main Comparison**<br>
 
 
-<img alt="H1 Results Kde Bar" src="https://www.dropbox.com/s/iuh1ul5bn0on766/H1_ppt_KDE_bar.png?raw=1" width="600">
+<img alt="H1 Results Kde Bar" src="https://www.dropbox.com/s/iuh1ul5bn0on766/H1_ppt_KDE_bar.png?raw=1" width="600" align='middle'>
 <br>
 
 ***Aim 3: To perform post-hoc pairwise comparisons for level of discount***
@@ -143,14 +143,14 @@ ___
 <br> 
 **Post-Hoc Comparison by Discount Level**<br>
 
-<img alt="H1 Discount Level Bar" src="https://www.dropbox.com/s/bglnpg69575x4jm/H1_tukey_bar.png?raw=1" width="600">
+<img alt="H1 Discount Level Bar" src="https://www.dropbox.com/s/bglnpg69575x4jm/H1_tukey_bar.png?raw=1" width="600" align='middle'>
 <br>
 
 
- <img alt="H1 Discount Level Group Means" src="https://www.dropbox.com/s/3uwfhdu6sqg5oil/table_H1_groups_mean_sem.png?raw=1" width="400"><br>
+ <img alt="H1 Discount Level Group Means" src="https://www.dropbox.com/s/3uwfhdu6sqg5oil/table_H1_groups_mean_sem.png?raw=1" width="400" align='middle'><br>
     
 
-<img alt="H1 Post Hoc - Sig Only" src="https://www.dropbox.com/s/2ymzmrb6t15hhsy/table_H1_tukey_sig_only.png?raw=1" width="500">
+<img alt="H1 Post Hoc - Sig Only" src="https://www.dropbox.com/s/2ymzmrb6t15hhsy/table_H1_tukey_sig_only.png?raw=1" width="500" align='middle'>
 
 
 
@@ -200,9 +200,9 @@ query = "SELECT* FROM OrderDetails,
     - We calculated our effect size using Cohen's d.
      
 **H2 Test Results**<br>
-<img alt="H2 Test Results" src="https://www.dropbox.com/s/6sivfe6cnzmgt13/table_H2_test_results.png?raw=1" width="600"><br>
+<img alt="H2 Test Results" src="https://www.dropbox.com/s/6sivfe6cnzmgt13/table_H2_test_results.png?raw=1" width="600" align='middle'><br>
 <br> 
-<img alt="H2 Results KDE Bar" src="https://www.dropbox.com/s/gdaqp5ytzjw7rsq/H2_KDE_bar.png?raw=1" width="600">
+<img alt="H2 Results KDE Bar" src="https://www.dropbox.com/s/gdaqp5ytzjw7rsq/H2_KDE_bar.png?raw=1" width="600" align='middle'>
 
 
 ## ***Conclusions for Hypothesis 2***
@@ -234,12 +234,12 @@ df_ord = pd.read_sql_query("SELECT * FROM OrderDetail JOIN [Order]  ON [Order].I
     - We therefore decided on a Mann-Whitney U test, which came back significant.
     - We calculated our effect size using Cohen's d.
 
-<img alt="H3 Mean Sem" src="https://www.dropbox.com/s/ujougqna47xotr8/table_H3_mean_sem.png?raw=1" width="400">
+<img alt="H3 Mean Sem" src="https://www.dropbox.com/s/ujougqna47xotr8/table_H3_mean_sem.png?raw=1" width="400" align='middle'>
 
 Replace: ~~< img alt="H3 Test Results" src="https://www.dropbox.com/s/ahtum2hps9b425d/table_H3_test_results.png?raw=1" width="400">~~
 
 
-<img alt ="H3 Test Results Kde bar" src="https://www.dropbox.com/s/fu56niuf301n8y8/H3_tukey_bar.png?raw=1" width="600">
+<img alt ="H3 Test Results Kde bar" src="https://www.dropbox.com/s/fu56niuf301n8y8/H3_tukey_bar.png?raw=1" width="600" align='middle'>
 
 
 ## ***Conclusions for Hypothesis 3:***
@@ -278,13 +278,13 @@ DB_OrderDetail = pd.read_sql_table('OrderDetail',engine);
     - We calculated our effect size using Cohen's d.
     
     
-<img alt="H4 Mean Sem" src="https://www.dropbox.com/s/sua2t4mege0p1na/table_H4_mean_sem.png?raw=1" width ="600">
-<img alt="H4 Test Results" src="https://www.dropbox.com/s/z8a7khpwxfjaljl/table_H4_test_results.png?raw=1" width="600">
-<img alt="H4 Kde Bar" src="https://www.dropbox.com/s/3fxsf16uxv1woqj/H4_kde_bar_no_notes.png?raw=1" width="600">
+<img alt="H4 Mean Sem" src="https://www.dropbox.com/s/sua2t4mege0p1na/table_H4_mean_sem.png?raw=1" width ="600" align='middle'>
+<img alt="H4 Test Results" src="https://www.dropbox.com/s/z8a7khpwxfjaljl/table_H4_test_results.png?raw=1" width="600" align='middle'>
+<img alt="H4 Kde Bar" src="https://www.dropbox.com/s/3fxsf16uxv1woqj/H4_kde_bar_no_notes.png?raw=1" width="600" align='middle'>
 
-<img alt="H4 Tukeys_sig only" src="https://www.dropbox.com/s/7mby9qegzcj6a7x/table_H4_tukey_sig_only.png?raw=1" width="500">
+<img alt="H4 Tukeys_sig only" src="https://www.dropbox.com/s/7mby9qegzcj6a7x/table_H4_tukey_sig_only.png?raw=1" width="500" align='middle'>
 <br>
-<img alt ="H4 Map of Quantities by Country" src="https://www.dropbox.com/s/c0cvg3k62pby4g4/H4_map.png?raw=1" width="900">
+<img alt ="H4 Map of Quantities by Country" src="https://www.dropbox.com/s/c0cvg3k62pby4g4/H4_map.png?raw=1" width="900" align='middle'>
 
 
 
