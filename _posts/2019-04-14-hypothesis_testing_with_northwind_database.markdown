@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Hypothesis Testing with Northwind Database"
-date:       2019-04-14 20:42:50 +0000
+date:       2019-04-14 16:42:51 -0400
 permalink:  hypothesis_testing_with_northwind_database
 ---
 
