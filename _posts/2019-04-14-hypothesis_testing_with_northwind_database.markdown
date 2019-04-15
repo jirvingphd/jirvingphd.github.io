@@ -24,7 +24,7 @@ ___
     - Alternative Hypothesis (H1): Products that are discounted sell in higher quantities.
     
 
-* **Q2: **Do customers spend more money overall if they are buying discounted items?**
+* **Q2: Do customers spend more money overall if they are buying discounted items?**
     - H1: Customers spend more money overall when their order includes discounted items.
     - H0: Customers spend the same amount regardless of discounted items. 
     
@@ -222,7 +222,9 @@ df_ord = pd.read_sql_query("SELECT * FROM OrderDetail JOIN [Order]  ON [Order].I
     - We had 2 samples to compare for a one tailed test.
     - We therefore decided on a Mann-Whitney U test, which came back significant.
     - We calculated our effect size using Cohen's d.
+
 <img alt='H3 Mean Sem' src='https://www.dropbox.com/s/ujougqna47xotr8/table_H3_mean_sem.png?raw=1' width=400>
+
 < img alt='H3 Test Results' src='https://www.dropbox.com/s/ahtum2hps9b425d/table_H3_test_results.png?raw=1' width=400>
 
 
@@ -270,5 +272,19 @@ DB_OrderDetail = pd.read_sql_table('OrderDetail',engine);```
 
 <img alt='H4 Tukeys_sig only' src='https://www.dropbox.com/s/7mby9qegzcj6a7x/table_H4_tukey_sig_only.png?raw=1'>
 <img alt = 'H4 Map of Quantities by Country' src='https://www.dropbox.com/s/c0cvg3k62pby4g4/H4_map.png?raw=1' width=900>
+
+
+
+# Final Conclusions and Recommendations
+
+- Discounts spur consumer purchasing behavior. 
+    - They buy discounted items in higher quantities. 
+    - Only a **minimal** discount is needed for consumer behavior benefit.
+- They spend more money if they are purchasing 1+ discounted items.
+- Time of year (by month) was not significant, but further metrics worth investigating.
+- Customers from different countries have unique spending behaviors that may be capitalized on with further investigation.
+
+
+
 
 
