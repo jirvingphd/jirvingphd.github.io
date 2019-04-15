@@ -150,7 +150,7 @@ ___
  <img alt="H1 Discount Level Group Means" src="https://www.dropbox.com/s/3uwfhdu6sqg5oil/table_H1_groups_mean_sem.png?raw=1" width="400"><br>
     
 
-<img alt="H1 Post Hoc - Sig Only" src="https://www.dropbox.com/s/2ymzmrb6t15hhsy/table_H1_tukey_sig_only.png?raw=1" width="400">
+<img alt="H1 Post Hoc - Sig Only" src="https://www.dropbox.com/s/2ymzmrb6t15hhsy/table_H1_tukey_sig_only.png?raw=1" width="500">
 
 
 
@@ -163,6 +163,8 @@ ___
  **Our post-hoc tukey results showed that discounts of 0-5%, 10-15%, 15-20%, and 20-25% were all significantly different from full price products. 
         - Except 5-10 % discount group
     - No discount groups were significantly different than other discount groups.
+
+
 ___
 # **Hypothesis 2:**
 > **Do customers spend more money if they are buying discounted items?**
@@ -178,7 +180,8 @@ ___
     
     ```python 
 query = "SELECT* FROM OrderDetails,
-            GROUPBY discount```
+            GROUPBY discount
+						```
 						
 - Calculated sub-totals for every products<br>
 ```UnitPrice*(1-Discount)*Quantity```
@@ -197,7 +200,7 @@ query = "SELECT* FROM OrderDetails,
     - We calculated our effect size using Cohen's d.
      
 **H2 Test Results**<br>
-<img alt="H2 Test Results" src="https://www.dropbox.com/s/6sivfe6cnzmgt13/table_H2_test_results.png?raw=1" width="500"><br>
+<img alt="H2 Test Results" src="https://www.dropbox.com/s/6sivfe6cnzmgt13/table_H2_test_results.png?raw=1" width="600"><br>
 <br> 
 <img alt="H2 Results KDE Bar" src="https://www.dropbox.com/s/gdaqp5ytzjw7rsq/H2_KDE_bar.png?raw=1" width="600">
 
@@ -212,8 +215,8 @@ _________
 # **Hypothesis 3:**
 > **Does the time of year affect quantity of items sold?**
 
-- $H_1$ = The month an order is placed relates to either a higher or lower mean quantity of items sold.
-- $H_0$ = The month of an order has no affect on the mean quantity of items sold.
+- H1 = The month an order is placed relates to either a higher or lower mean quantity of items sold.
+- H0 = The month of an order has no affect on the mean quantity of items sold.
 
 <br>
 
@@ -222,7 +225,8 @@ _________
 ***Aim 1 : To select the proper dataset for analyiss  and generate data groups for testing.***
 - Use sqlalchemy to create engine to connect to Northwind_small.sqlite.<br>
 ```python
-df_ord = pd.read_sql_query("SELECT * FROM OrderDetail JOIN [Order]  ON [Order].Id = OrderDetail.OrderId", engine)```
+df_ord = pd.read_sql_query("SELECT * FROM OrderDetail JOIN [Order]  ON [Order].Id = OrderDetail.OrderId", engine)
+```
 
 * ***Aim 2: Select the appropriate t-test based on tests for the assumptions of normality and homogeneity of variance.***
     - We had significant results for both our normality and equal variance tests.
@@ -274,11 +278,12 @@ DB_OrderDetail = pd.read_sql_table('OrderDetail',engine);
     - We calculated our effect size using Cohen's d.
     
     
-<img alt="H4 Mean Sem" src="https://www.dropbox.com/s/sua2t4mege0p1na/table_H4_mean_sem.png?raw=1" width ="400">
-<img alt="H4 Test Results" src="https://www.dropbox.com/s/z8a7khpwxfjaljl/table_H4_test_results.png?raw=1" width="400">
-<img alt="H4 Kde Bar" src="https://www.dropbox.com/s/3fxsf16uxv1woqj/H4_kde_bar_no_notes.png?raw=1" width="500">
+<img alt="H4 Mean Sem" src="https://www.dropbox.com/s/sua2t4mege0p1na/table_H4_mean_sem.png?raw=1" width ="600">
+<img alt="H4 Test Results" src="https://www.dropbox.com/s/z8a7khpwxfjaljl/table_H4_test_results.png?raw=1" width="600">
+<img alt="H4 Kde Bar" src="https://www.dropbox.com/s/3fxsf16uxv1woqj/H4_kde_bar_no_notes.png?raw=1" width="600">
 
-<img alt="H4 Tukeys_sig only" src="https://www.dropbox.com/s/7mby9qegzcj6a7x/table_H4_tukey_sig_only.png?raw=1" widith="500">
+<img alt="H4 Tukeys_sig only" src="https://www.dropbox.com/s/7mby9qegzcj6a7x/table_H4_tukey_sig_only.png?raw=1" width="500">
+<br>
 <img alt ="H4 Map of Quantities by Country" src="https://www.dropbox.com/s/c0cvg3k62pby4g4/H4_map.png?raw=1" width="900">
 
 
