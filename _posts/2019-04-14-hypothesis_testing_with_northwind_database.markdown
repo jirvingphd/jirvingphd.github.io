@@ -15,7 +15,6 @@ Additionally, we were tasked with thinking of  3 other questions that would be o
 They requested we formally apply hypothesis testing for our results to see if we could the null hypothesis, that there is no effect of discounts on quantities purchased.
     
 After considering their initial question and examining their databases, we decided that the company would be interested in understanding other aspects of consumer purchasing behavior. We then formulated 3 addititional questions along those lines.
-
 ___
 ## Four Hypotheses Regarding Consumer Purchasing Behavior
 
@@ -95,7 +94,7 @@ ___
         - Tukey's multiple pairwise comparison test
     - If the result was significant, we rejected the null hypothesis and performed additional analyses:
         - Calculated effect size with Cohen's d.
-- ***Aim 3: If appropriate, perform post-hoc pairwise comparison testing to determine which specific levels of our groups that are significantly differnet.***
+- ***Aim 3: If appropriate, perform post-hoc pairwise comparison testing to determine which specific levels of our groups that are significantly differnet.***![](http://)
      - Tukey's test for multiple pairwise comparisons<br>
      ```statsmodels.stats.multicomp.pairwise_tukeyhsd```
 	
@@ -129,28 +128,29 @@ ___
 
 <br>
 **H1 Test Results**<br>
-<img src="https://github.com/jirvingphd/dsc-2-final-project-online-ds-ft-021119/blob/master/Blog%20Post%20Images/H1_ppt_KDE_bar.png?raw=true" width="600")<br>
+
+<img alt="H1 Test Results" src="https://www.dropbox.com/s/novnqt2a7j4hrhd/table_H1_test_results.png?raw=1" width="600"><br>
 **H1-Main Comparison**<br>
 
 
-<img  src="https://www.dropbox.com/s/iuh1ul5bn0on766/H1_ppt_KDE_bar.png?raw=1" width="600">
+<img alt="H1 Results Kde Bar" src="https://www.dropbox.com/s/iuh1ul5bn0on766/H1_ppt_KDE_bar.png?raw=1" width="600">
 <br>
 
-***H1, Aim 3: To perform post-hoc pairwise comparisons for level of discount***
+***Aim 3: To perform post-hoc pairwise comparisons for level of discount***
 - **To determine which level of discounts had the largest effect, we performed a pairwise multiple comparison Tukey's test**
 - Since there were only 1 item on sale at certain discount levels, we binned the discount levels in 0.5% groups.
     - No Discounts is represnted by the interval (-0.05 to 0].
 <br> 
 **Post-Hoc Comparison by Discount Level**<br>
 
-<img src='https://www.dropbox.com/s/bglnpg69575x4jm/H1_tukey_bar.png?raw=1' width=600>
+<img alt="H1 Discount Level Bar" src="https://www.dropbox.com/s/bglnpg69575x4jm/H1_tukey_bar.png?raw=1" width="600">
 <br>
 
 
- <img  src='https://www.dropbox.com/s/3uwfhdu6sqg5oil/table_H1_groups_mean_sem.png?raw=1' width=400><br>
+ <img alt="H1 Discount Level Group Means" src="https://www.dropbox.com/s/3uwfhdu6sqg5oil/table_H1_groups_mean_sem.png?raw=1" width="400"><br>
     
 
-<img  src='https://www.dropbox.com/s/2ymzmrb6t15hhsy/table_H1_tukey_sig_only.png?raw=1' width=400>
+<img alt="H1 Post Hoc - Sig Only" src="https://www.dropbox.com/s/2ymzmrb6t15hhsy/table_H1_tukey_sig_only.png?raw=1" width="400">
 
 
 
@@ -197,9 +197,9 @@ query = "SELECT* FROM OrderDetails,
     - We calculated our effect size using Cohen's d.
      
 **H2 Test Results**<br>
-<img  src='https://www.dropbox.com/s/6sivfe6cnzmgt13/table_H2_test_results.png?raw=1' width=500><br>
+<img alt="H2 Test Results" src="https://www.dropbox.com/s/6sivfe6cnzmgt13/table_H2_test_results.png?raw=1" width="500"><br>
 <br> 
-<img src="https://www.dropbox.com/s/gdaqp5ytzjw7rsq/H2_KDE_bar.png?raw=1" width=600>
+<img alt="H2 Results KDE Bar" src="https://www.dropbox.com/s/gdaqp5ytzjw7rsq/H2_KDE_bar.png?raw=1" width="600">
 
 
 ## ***Conclusions for Hypothesis 2***
@@ -230,12 +230,12 @@ df_ord = pd.read_sql_query("SELECT * FROM OrderDetail JOIN [Order]  ON [Order].I
     - We therefore decided on a Mann-Whitney U test, which came back significant.
     - We calculated our effect size using Cohen's d.
 
-<img alt='H3 Mean Sem' src='https://www.dropbox.com/s/ujougqna47xotr8/table_H3_mean_sem.png?raw=1' width=400>
+<img alt="H3 Mean Sem" src="https://www.dropbox.com/s/ujougqna47xotr8/table_H3_mean_sem.png?raw=1" width="400">
 
-< img alt='H3 Test Results' src='https://www.dropbox.com/s/ahtum2hps9b425d/table_H3_test_results.png?raw=1' width=400>
+Replace: ~~< img alt="H3 Test Results" src="https://www.dropbox.com/s/ahtum2hps9b425d/table_H3_test_results.png?raw=1" width="400">~~
 
 
-<img alt ='H3 Test Results Kde bar' src='https://www.dropbox.com/s/fu56niuf301n8y8/H3_tukey_bar.png?raw=1' width=600>
+<img alt ="H3 Test Results Kde bar" src="https://www.dropbox.com/s/fu56niuf301n8y8/H3_tukey_bar.png?raw=1" width="600">
 
 
 ## ***Conclusions for Hypothesis 3:***
@@ -264,7 +264,8 @@ $H_0$: All countries purchase the same quantities of discounted vs non discounte
 - Read tables directly into dataframes<br>
 ```python
 DB_Order = pd.read_sql_table('Order',engine);
-DB_OrderDetail = pd.read_sql_table('OrderDetail',engine);```
+DB_OrderDetail = pd.read_sql_table('OrderDetail',engine);
+```
 
 * ***Aim 2: Select the appropriate t-test based on tests for the assumptions of normality and homogeneity of variance.***
     - We had significant results for both our normality and equal variance tests.
@@ -273,12 +274,12 @@ DB_OrderDetail = pd.read_sql_table('OrderDetail',engine);```
     - We calculated our effect size using Cohen's d.
     
     
-<img alt='H4 Mean Sem' src='https://www.dropbox.com/s/sua2t4mege0p1na/table_H4_mean_sem.png?raw=1' width =400>
-<img alt='H4 Test Results' src='https://www.dropbox.com/s/z8a7khpwxfjaljl/table_H4_test_results.png?raw=1' width=400>
-<img alt='H4 Kde Bar' src='https://www.dropbox.com/s/3fxsf16uxv1woqj/H4_kde_bar_no_notes.png?raw=1' width=500>
+<img alt="H4 Mean Sem" src="https://www.dropbox.com/s/sua2t4mege0p1na/table_H4_mean_sem.png?raw=1" width ="400">
+<img alt="H4 Test Results" src="https://www.dropbox.com/s/z8a7khpwxfjaljl/table_H4_test_results.png?raw=1" width="400">
+<img alt="H4 Kde Bar" src="https://www.dropbox.com/s/3fxsf16uxv1woqj/H4_kde_bar_no_notes.png?raw=1" width="500">
 
-<img alt='H4 Tukeys_sig only' src='https://www.dropbox.com/s/7mby9qegzcj6a7x/table_H4_tukey_sig_only.png?raw=1'>
-<img alt = 'H4 Map of Quantities by Country' src='https://www.dropbox.com/s/c0cvg3k62pby4g4/H4_map.png?raw=1' width=900>
+<img alt="H4 Tukeys_sig only" src="https://www.dropbox.com/s/7mby9qegzcj6a7x/table_H4_tukey_sig_only.png?raw=1" widith="500">
+<img alt ="H4 Map of Quantities by Country" src="https://www.dropbox.com/s/c0cvg3k62pby4g4/H4_map.png?raw=1" width="900">
 
 
 
@@ -290,8 +291,4 @@ DB_OrderDetail = pd.read_sql_table('OrderDetail',engine);```
 - They spend more money if they are purchasing 1+ discounted items.
 - Time of year (by month) was not significant, but further metrics worth investigating.
 - Customers from different countries have unique spending behaviors that may be capitalized on with further investigation.
-
-
-
-
-
+____
