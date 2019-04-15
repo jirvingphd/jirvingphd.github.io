@@ -47,7 +47,7 @@ ___
 - **We then asked 2 key questions abour our data and then used the results of these tests to choose the most appropriate test for each hypotheses.**
 
     1. **How many samples will I be comparing?**
-        - 1 group vs a idealized distribution?
+        - 1 group vs an idealized distribution?
         - 2 groups?
         - More than 2?
  
@@ -155,7 +155,7 @@ ___
 
 
     
-### ***Conclusions for Hypothesis 1:***
+## ***Conclusions for Hypothesis 1:***
 
 - **We then concluded we need a non-parametric 2-sample test, so we used the Mann-Whitney U test**. 
     - Our comparison had a p-value less than .05
@@ -164,7 +164,7 @@ ___
         - Except 5-10 % discount group
     - No discount groups were significantly different than other discount groups.
 ___
-## Hypothesis 2
+# **Hypothesis 2:**
 > **Do customers spend more money if they are buying discounted items?**
 
 - $H_1$: Customers spend more money overall when their order includes discounted items.
@@ -202,14 +202,14 @@ query = "SELECT* FROM OrderDetails,
 <img src="https://www.dropbox.com/s/gdaqp5ytzjw7rsq/H2_KDE_bar.png?raw=1" width=600>
 
 
-### Hypothesis 2 Conclusions
+## ***Conclusions for Hypothesis 2***
 - We reject the null hypothesis that there is no effect of an order containing discounted items on the order total.
 - Therefore, we have found evidence that customers spend more money when they are buying at least 1 discounted item.
 - However, Cohen's d indicates it a small effect size.
 
 _________
 
-## **Hypothesis 3**
+# **Hypothesis 3:**
 > **Does the time of year affect quantity of items sold?**
 
 - $H_1$ = The month an order is placed relates to either a higher or lower mean quantity of items sold.
@@ -251,7 +251,7 @@ df_ord = pd.read_sql_query("SELECT * FROM OrderDetail JOIN [Order]  ON [Order].I
 
 ___
 
-# **Hypothesis 4** 
+# **Hypothesis 4:** 
 
 > Do different countries respond to discounts more than others? 
 
