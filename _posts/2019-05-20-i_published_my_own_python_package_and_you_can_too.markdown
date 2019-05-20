@@ -32,6 +32,7 @@ ___
 - **Including [auto-generated documentation with Sphinx](https://bs-ds.readthedocs.io/en/latest/)**
 - **and automated build-testing and deployment with [travis-ci.org.](https://travis-ci.org/)**
 <br>
+
 ___
 
 # 1. "But...*why would I bother?*", you may be wondering...
@@ -56,6 +57,7 @@ ___
 
 5. **Finally, becuase you're lazy** and just want all of your tools imported for you and ready to use whereever you go with as little effort as possible.
 > **I'm a big believer in exerting extra up-front-effort in the name of future-laziness-convience.**
+
 
 ___
 
@@ -104,7 +106,7 @@ ___
 
 ___
 
-### REC'D STEP 0. **BEFORE INSTALING ANYTHING**, you should:<br>
+### **REC'D STEP 0. *BEFORE INSTALING ANYTHING*, you should:**<br>
 
 - [ ] **Create a new virtual environment**, preferably by cloning your current one.
     - Anaconda Navigator makes the cloning process easy. 
@@ -117,13 +119,13 @@ ___
     - This will save the .yml into your current  directory that can be used to install your environment in the future using:<br>```conda env create -f my_environment.yml```
 - **DO NOT SKIP THIS STEP.** I have warned you and I am not responsible for any broken environments.<br>While nothing *should* break, it's always a GOOD idea to create a new environment for creating and installing test packages. Really, I should say  its a DUMB idea not to. <br><br><br>
   
-### REC'D STEP 1: Install cookiecutter into your new environment.
+### **REC'D STEP 1: Install cookiecutter into your new environment.**
 - Tutorial "Step 1: Install Cookiecutter": Install Cookie Cutter and cookie-cut the default template cookiecuter repo.
     - [x] You may ignore the first part of Step 1 (using virtualenv to create an env). <br><br>
     - [ ] Install cookiecutter via pip:<br>
     ```pip install cookiecutter```<br><br>
     
-### REC'D STEP 2: Create a new GitHub repo for your package and  clone it locally
+### **REC'D STEP 2: Create a new GitHub repo for your package and clone it locally**
 ***NOTE: My recommendation deviates from the tutorial. This will replace "Step 3: Create a GitHub Repo".***
 - [ ] Log into your your GitHub profile on github.com and Create a New Repository <br>by clicking the + sign next to your account picture on the top-right of the page. 
     - [ ] Create a New Repository, using the desired name for your published package for the repo name. 
@@ -136,7 +138,7 @@ ___
         - OR "Open in Desktop" if you've installed and logged in to the GitHub Desktop App. <br><br>
 
 
-### OFFICIAL STEP #3.  Use the cookiecutter command to cut-your-first-cookie-template.
+### **OFFICIAL STEP #3.  Use the cookiecutter command to cut-your-first-cookie-template.**
 
 * [ ] Activate cloned environment from step #1, ```cd```into your  repo's folder.
 * [ ] Enter the following command to create the template infrastructure:
@@ -170,7 +172,7 @@ ___
 
 <br><br>
     
-####  STEP #3B [REQUIRED if you followed REC'D STEP #2 and created the repo first]:
+####  **STEP #3B [REQUIRED if you followed REC'D STEP #2 and created the repo first]:**
 
 - If you followed my REC'D STEP #2, you main repo folder should now contain:
     - a README.md file
@@ -198,16 +200,18 @@ ___
 - **If so congratulations! You have the infrastructure properly installed!** 
     
 
-### Official Step 4: Install Dev Requirements
+### **Official Step 4: Install Dev Requirements**
 - In your terminal, make sure you are still located in the main repo folder, which contains **requirements-dev.txt**
 - Make sure you are still using your newly cloned environment, then enter:<br><br>
 ```pip install -r requirements_dev.txt```
+
 ___
 
-- [ ] This is a decent place to take a moment to commit your changes and push to  your github repo. 
+> - [ ] This is a decent place to take a moment to commit your changes and push to  your github repo. 
+
 ___
 
-### Official Step 5: Set Up Travis CI
+### **Official Step 5: Set Up Travis CI**
 - [ ] **In order to follow the offical step 5, you will need to install Travis CLI tool, which requires Ruby.**<br> [Instructions are located here and are OS-specific](https://cookiecutter-pypackage.readthedocs.io/en/latest/travis_pypi_setup.html#travis-pypi-setup), 
     - For MacOS, they recommend using the Homebrew travis package:
         - ```brew install travis```<br><br>
@@ -226,7 +230,7 @@ ___
             - I got around the issue by **using the normal windows cmd prompt for this step instead of using GitBash.**  (This is a one-time step that will encrypt your password and store it in a config file so you never have to enter it again.)
 
 
-### Official Step 6: Set Up ReadTheDocs
+### **Official Step 6: Set Up ReadTheDocs**
 - [ ] Follow the [official tutorial step 6](https://cookiecutter-pypackage.readthedocs.io/en/latest/tutorial.html#step-6-set-up-readthedocs) for setting up documentation on readthedocs.org.
 
 ### ~~Official Step 7:Set Up pyup.io~~
@@ -234,16 +238,15 @@ ___
 - I recommended skipping setting up pyup.io during the cookiecutter prompt responses above. 
     - This service would alert you when any of the required python packages that are your package needs to run have been updated, so that you can update the versions in your installation requirements  
 ___
+
+
+> **SIDEBAR: As of now, you may realize that you have not actually added any code to your python package, and yet the next official step is to release on PyPi.**
+
+> - If you'd like to add some of your code before submitting your package to PyPi, jump down to the "Adding Your Code / Editing your package" section ( after the official instructions).
+
 ___
 
-**SIDEBAR: As of now, you may realize that you have not actually added any code to your python package, and yet the next official step is to release on PyPi.**
-
-- If you'd like to add some of your code before submitting your package to PyPi, jump down to the "Adding Your Code / Editing your package" section ( after the official instructions).
-
-___
-___
-
-### Official Step 8: Release on PyPi
+### **Official Step 8: Release on PyPi**
 #### One last annoying, first-time-only hurdle and then you're on your way to automated deployment for the future!
 - Travis-CI will automate the process for generating the distribution files for your package and uploading them to PyPi, BUT it cannot CREATE a NEW package that doesn't already exist on PyPi's servers.
 - [ ] To *register* your new package with PyPi for the very first version, you must **manually create and upload the very first version** of your package.  [Official Python instructions for "generating distribution archives", summarized below](https://packaging.python.org/tutorials/packaging-projects/#generating-distribution-archives)
@@ -271,8 +274,6 @@ ___
                 - For Mac, [try this article's suggestions](https://programwithus.com/learn-to-code/install-python3-mac/)
 
 
-
-___
 ___
 
 # Adding Your Code / Editing your package/modules
