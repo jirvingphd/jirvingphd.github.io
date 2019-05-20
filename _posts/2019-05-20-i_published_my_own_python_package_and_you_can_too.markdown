@@ -5,7 +5,6 @@ date:       2019-05-20 18:19:59 -0400
 permalink:  i_published_my_own_python_package_and_you_can_too
 ---
 
-
 ## *A.K.A. Professional-quality Python packages made easy with cookiecutter:*
 
 
