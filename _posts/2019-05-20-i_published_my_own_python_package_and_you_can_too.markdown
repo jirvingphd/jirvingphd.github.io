@@ -11,14 +11,15 @@ permalink:  i_published_my_own_python_package_and_you_can_too
 > <img src="https://raw.githubusercontent.com/jirvingphd/dsc-3-final-project-online-ds-ft-021119/master/blog_post/cookiecutter_medium.png" width="200"><br>
 > <img src = "https://raw.githubusercontent.com/jirvingphd/dsc-3-final-project-online-ds-ft-021119/master/blog_post/cookie%20cutter%20-%20cutting%20code.png" width="150">
 
-### *How I created BroadSteel_DataScience (bs_ds)*‡
-<img src="https://raw.githubusercontent.com/jirvingphd/dsc-3-final-project-online-ds-ft-021119/master/blog_post/big%20blog%20header_728%20x%2090.jpg" width="450"><br>
+<img src="https://raw.githubusercontent.com/jirvingphd/dsc-3-final-project-online-ds-ft-021119/master/blog_post/big%20blog%20header_728%20x%2090.jpg" width="400">
 
-> <img src="https://raw.githubusercontent.com/jirvingphd/dsc-3-final-project-online-ds-ft-021119/master/blog_post/bs_ds_logo.png" width ="200" align="left"><br>
-<br><br>
-> <br>
-> * https://bs-ds.readthedocs.io/en/latest/<br>
-> * https://pypi.org/project/bs-ds/<br>
+### *How I created BroadSteel_DataScience (bs_ds)*‡
+
+
+> <img src="https://raw.githubusercontent.com/jirvingphd/dsc-3-final-project-online-ds-ft-021119/master/blog_post/bs_ds_logo.png" width ="200">
+
+- [https://bs-ds.readthedocs.io/en/latest/](https://bs-ds.readthedocs.io/en/latest/)<br>
+- [https://pypi.org/project/bs-ds/](https://pypi.org/project/bs-ds/)<br>
 
 ‡ *Note: BroadSteel DataScience is: inspired by, an homage to, legally distinct from, and in no way representative of <br>Flatiron School's Online [Data Science bootcamp program.](https://flatironschool.com/career-courses/data-science-bootcamp/online/)* <br> 
 
