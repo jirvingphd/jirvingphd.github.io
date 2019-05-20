@@ -1,11 +1,11 @@
 ---
 layout: post
 title:      "I published my own Python package and you can too! "
-date:       2019-05-20 22:19:58 +0000
+date:       2019-05-20 18:19:59 -0400
 permalink:  i_published_my_own_python_package_and_you_can_too
 ---
 
-<img src="https://raw.githubusercontent.com/jirvingphd/dsc-3-final-project-online-ds-ft-021119/master/blog_post/big%20blog%20header_728%20x%2090.jpg" width="450"><br>
+
 ## *A.K.A. Professional-quality Python packages made easy with cookiecutter:*
 
 
@@ -13,7 +13,9 @@ permalink:  i_published_my_own_python_package_and_you_can_too
 > <img src = "https://raw.githubusercontent.com/jirvingphd/dsc-3-final-project-online-ds-ft-021119/master/blog_post/cookie%20cutter%20-%20cutting%20code.png" width="150">
 
 ### *How I created BroadSteel_DataScience (bs_ds)*‡
-> <img src="https://raw.githubusercontent.com/jirvingphd/dsc-3-final-project-online-ds-ft-021119/master/blog_post/bs_ds_logo.png" width ="200" align=left><br>
+<img src="https://raw.githubusercontent.com/jirvingphd/dsc-3-final-project-online-ds-ft-021119/master/blog_post/big%20blog%20header_728%20x%2090.jpg" width="450"><br>
+
+> <img src="https://raw.githubusercontent.com/jirvingphd/dsc-3-final-project-online-ds-ft-021119/master/blog_post/bs_ds_logo.png" width ="200" align="left"><br>
 <br><br>
 > <br>
 > * https://bs-ds.readthedocs.io/en/latest/<br>
