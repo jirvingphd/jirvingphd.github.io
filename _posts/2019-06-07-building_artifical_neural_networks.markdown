@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "BUILDING ARTIFICAL NEURAL NETWORKS:"
-date:       2019-06-07 17:42:21 +0000
+date:       2019-06-07 13:42:22 -0400
 permalink:  building_artifical_neural_networks
 ---
 
