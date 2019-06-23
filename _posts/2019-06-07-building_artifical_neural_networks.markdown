@@ -5,16 +5,14 @@ date:       2019-06-07 13:42:22 -0400
 permalink:  building_artifical_neural_networks
 ---
 
-# A Beginner's Guide to Playing (Artificial) God
+## From real neurons to artificial ones
 
 Coming from a neuroscience background, performing _in vivo_ electrophysiology experiments (recording and analyzing the electrical activity of neuorns), I was intrigued when first exposed to artificial neural networks (ANNs). 
 
 My understanding of the  neural circuitry, neurotransmission, and neuroplasticity gave me a very strong intuitive understanding of how they work. But an intuitive understanding vs. practical usability are _not_ the same thing...
 
 Below we will first dive into a high-level primer on how neurons communicate before turning to designing ANNs.
-## The Brain: A Primer
 
-### In the beginning...
 
 
 <img src="https://raw.githubusercontent.com/jirvingphd/dsc-4-final-project-online-ds-ft-021119/master/blog/brain_neural_network_illustration.png" width="500">
@@ -29,11 +27,13 @@ For the purposes of this introduction, we are going to use a superficial now-anc
 
 <img src="https://raw.githubusercontent.com/jirvingphd/dsc-4-final-project-online-ds-ft-021119/master/blog/neuron-gif_orig.gif" width="500">
 
+<img src="https://raw.githubusercontent.com/jirvingphd/dsc-4-final-project-online-ds-ft-021119/master/blog/Perceptron_moj.png" width="500">
+
+
 A neuron is a specialized brain cell that receives, processes, and transmits information, and is sort of shaped like a tree. 
 
-It has leaves on branches that spread out from the top of its trunk, which is a long central rod/pole/tube through which water and energy from the sun are transferred. If you follow the trunk down into the ground, it has roots that extend out deep into the earth. In a neuron, the branches and leaves are called the dendtrites. They all spread out form one central trunk of the neuron, called the soma/body. If you travel down the neuron's trunk, called the axon, you will reach its roots, which are called terminals.
-
-~~receive incoming information, like the leaves of a tree receive energy from the sun. The branches all stem from one center point at the top of its trunk.~~
+It has leaves on branches that spread out from the top of its trunk, which is a long central rod/pole/tube through which water and energy from the sun are transferred. If you follow the trunk down into the ground, it has roots that extend out deep into the earth. In a neuron, the branches and leaves are called the dendtrites. 
+They all spread out form one central trunk of the neuron, called the soma/body. If you travel down the neuron's trunk, called the axon, you will reach its roots, which are called terminals.
 
 A neuron receives input information in the leaves(synapses) of its dendrites, that information is funneled down the branches to where they all meet, the top of the trunk. Then a calculation is made and if the input signal is strong enough that information is sent down through the trunk of the neuron (down its axon) and down into its roots/terminals.
 
@@ -45,13 +45,13 @@ This process is called "neurotransmission" and is called an  _electro-chemical p
 
 <img src="https://raw.githubusercontent.com/jirvingphd/dsc-4-final-project-online-ds-ft-021119/master/blog/synapse-7d_orig.gif" width="300">
 
-The electrical component is a large, incredibly fast, spike of electricity that shoots through a neuron from its head to its tail. This spike of electricity is called the action potential and it we refer to when we say your neurons are "firing". 
+The electrical component is a large, incredibly fast, spike of electricity that shoots through a neuron from its head to its tail. This spike of electricity is called the _action potential_ and thats what we are referring to when we say our brain is firing.  
 
 > So how and why is information transmission divided into these separate, but interconnected and inter-dependent pieces?
 
 
 Now, the action potential has a couple special properties that are essential to neurotransmission. 
-1) An action potential is all-or-nothing. Either a neuron fires, or it doesn't. It's a binary process. 
+1) An action potential is all-or-nothing. Either a neuron fires, or it doesn't. It's a binary process. <br>_Hmm I know some activation functions kinda like that.._
 2) An action potential only happens if a cell gets enough excitatory input from other neurons. A neuron is constantly receiving excitatory and inhibitory inputs from thousands of neurons that are essentially playing tug-of-war, with excitatory signals pushing the neuron closer and closer to firing, while the inhibitory signals are doing the opposite, trying to prevent the neuron from firing, pushing it down into a quiet state. 
 
 If the excitatory input is strong enough, it overpowers any inhibition, build up enough electrical charge to reach a special electrical threshold that will open a cascade of special channels allow a tidal wave of electrical charge to rush into the neuron and down its axon to its terminals. The terminals are connected to thousands of other neurons, and this rush of electrical activity launches boats of neurotransmitters into the synapse to pass the information to the next layer of neurons. 
@@ -69,5 +69,23 @@ The head contains made of
 2. Soma 
 
 
+## How real neural networks learn
+There's a catchy little rhyme to summarize the Hebbian cell assembly theory the simplest form of neuroplasticity. 
 
-## Artificial Neural Networks: 
+>  _neuroplasticity_: the ability of the brain to form and reorganize synaptic connections, especially in response to learning or experience or following injury.
+>> _"Cells that fire together wire together."_
+>> 
+
+A long time ago neuroscientists believed that your brain developed until a certain age and then stopped and would simply decay over time. 
+
+Now we know that your brain is _constantly_ changing. Everything you with your brain every moment is making those pathways for thing stronger and stronger.
+
+ When we are born our brains are full of potential. We start out with our neurons over-connected, ready to work together, ready to learn. Then as we learn, specif c connections get strong or weaker, until the unneeded ones are pruned off and wither. 
+
+## How your senses work and layer of the human cortex
+
+
+---- WORK IN PROGRESS -----
+
+This is the underlying concept behind 
+> ## Artificial Neural Networks: 
