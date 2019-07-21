@@ -15,8 +15,6 @@ Below we will first dive into a high-level primer on how neurons communicate bef
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-$$ \alpha $$
-
 <img src="https://raw.githubusercontent.com/jirvingphd/dsc-4-final-project-online-ds-ft-021119/master/blog/brain_neural_network_illustration.png" width="500">
 
 > The human brain contains approximately **86** ***billion*** neurons. 
